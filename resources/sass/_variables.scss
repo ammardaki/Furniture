@@ -1,0 +1,35 @@
+// // Body
+// $body-bg: #f8fafc;
+
+// // Typography
+// $font-family-sans-serif: 'Nunito', sans-serif;
+// $font-size-base: 0.9rem;
+// $line-height-base: 1.6;
+$color-white: #FFFFFF;
+$color-light: #FAFAFA;
+$color-grey: #888888;
+$color-brown: #B18D5B;
+$color-black: #000000;
+
+$theme-colors: (
+        "white": $color-white,
+        "light": $color-light,
+        "grey": $color-grey,
+        "brown": $color-brown,
+        "black": $color-black,
+);
+
+// Body
+$body-bg: $color-light;
+$body-color: $color-grey;
+
+// Misc
+$box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+
+// Typography
+$font-family-sans-serif: 'Source Sans Pro', sans-serif;
+
+// Button
+$btn-border-radius: 0;
+$btn-border-width: 2px;
+$btn-font-weight: bold;

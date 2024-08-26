@@ -1,0 +1,89 @@
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 600px;
+    /* Set the card's maximum width */
+    margin: 0 auto;
+    /* Center the card */
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 300px;
+    /* Fixed height for the image */
+    width: 100%;
+    object-fit: contain;
+}
+
+.card-body {
+    padding: 20px;
+    font-family: 'Lora', serif;
+    color: #333;
+    background-color: #fff;
+}
+
+.card-title {
+    font-family: 'Lora', serif;
+    color: #007bff;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card-text {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    text-decoration: none;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+        /* Ensure card width adjusts for smaller screens */
+    }
+
+    .card-img-top {
+        height: 200px;
+        /* Adjust height for smaller screens */
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        /* Adjust title size for smaller screens */
+    }
+
+    .card-text {
+        font-size: 0.875rem;
+        /* Adjust text size for smaller screens */
+    }
+}

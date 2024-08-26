@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b66434;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    /* تعيين الارتفاع ليملء الشاشة بالكامل */
+}
+
+.login-form {
+    margin: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    /* زيادة التباعد الداخلي */
+    width: 80%;
+    /* تحديد العرض */
+    max-width: 1000px;
+    /* تحديد العرض الأقصى */
+    display: flex;
+    /* عرض مربع النموذج كمربع مرن */
+}
+
+.login-form .main {
+    display: flex;
+    /* عرض عناصر المحتوى كمربع مرن */
+    flex: 1;
+    /* التوسيع ليملأ المساحة */
+    padding: 20px;
+    /* زيادة التباعد الداخلي */
+    flex-direction: column;
+    /* تغيير ترتيب العناصر إلى عمودي */
+    align-items: center;
+    /* محاذاة العناصر بالتوسيط */
+}
+
+.login-form .form-img img {
+    width: 100%;
+    /* تعبئة الصورة لتمتد على كامل عرض مربع النموذج */
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.login-form .content {
+    flex: 1;
+    /* التوسيع ليملأ المساحة */
+    padding: 20px;
+    /* زيادة التباعد الداخلي */
+    max-width: 400px;
+    /* تحديد العرض الأقصى */
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    /* زيادة التباعد بين العناصر */
+    color: #333;
+    /* تغيير لون النص */
+}
+
+.login-form label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: calc(100% - 15px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button[type="submit"] {
+    background-color: #b66434;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+.login-form .btn-link {
+    text-decoration: none;
+    color: #007bff;
+    /* تغيير لون الرابط */
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.login-form .btn-link:hover {
+    color: #0056b3;
+    /* تغيير لون الرابط عند التحويم */
+}
+
+.login-form .content>div {
+    margin-bottom: 20px;
+    /* تغيير الهامش بين العناصر */
+}
